@@ -55,7 +55,7 @@ ax.spines['top'].set_color('none')
 ax.set_xlim(-10, 10)
 ax.set_ylim(-0.1, 0.25)
 
-ax.text(3.5, 0.17, r'$p(x) +q(x)$', horizontalalignment='center', fontsize=17)
+ax.text(3.5, 0.17, r'$DKL(p(x)||q(x))$', horizontalalignment='center', fontsize=17)
 
 ax.plot(range, KL(range))
 
