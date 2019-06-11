@@ -1,43 +1,127 @@
-# Welcome to Jekyll!
 #
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
+# This file contains configuration flags to customize your site
 #
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Fundamental Statistic
-email: vqnam97@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+# Name of your site (displayed in the header)
+name: David Crook
+title: David Crook
 
-# Build settings
-markdown: kramdown
-theme: minima
+# Short bio or description (displayed in the header)
+description: NoCo Hacker Dev Blog
+
+# these are more useful for a shared code repo
+github:
+  private: false
+  license:
+    name: MIT
+  source:
+    branch: "master"
+    path: "/"
+  repository_url: "https://github.com/idcrook/idcrook.github.io"
+
+# URL of your avatar or profile pic (you could use your GitHub profile pic)
+avatar: https://avatars0.githubusercontent.com/u/461806?v=3&s=140
+# github identicon: https://github.com/identicons/idcrook.png
+
+# https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/advanced-usage.md#setting-a-default-image
+# define a default image (for all pages) using Front Matter default
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: https://github.com/identicons/idcrook.png
+
+# Includes an icon in the footer for each username you enter
+footer-links:
+  dribbble:
+  email: david.crook@gmail.com
+  facebook: # idcrook
+  flickr:
+  github: idcrook
+  homepage: https://www.crookster.org
+  instagram: dpc
+  linkedin: # davidcrook
+  pinterest:
+  rss: yes
+  twitter: idcrook
+  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  youtube: channel/UCvxiCpuYsfttAuh8A5iCCxg
+  googleplus: # anything in your profile username that comes after plus.google.com/
+
+# used by jekyll-seo-tag plugin
+twitter:
+  username: idcrook
+  card: summary
+
+# search site console
+google_site_verification: PWPQbEIJ5PwPMsdjZzGgB0JAAalS8_ISAhBU12sMbh0
+
+social:
+  name: David Crook
+  links:
+    - https://twitter.com/idcrook
+    - https://github.com/idcrook
+    - https://www.instagram.com/dpc
+    - https://www.linkedin.com/in/davidcrook
+    - https://keybase.io/idcrook
+    - https://youtube.com/channel/UCvxiCpuYsfttAuh8A5iCCxg
+    - https://www.facebook.com/idcrook
+
+# Enter your Disqus shortname (not your username) to enable commenting on posts
+# You can find your shortname on the Settings page of your Disqus account
+# https://github.com/barryclark/jekyll-now/wiki/How-to-add-Disqus-to-your-blog
+disqus: https-idcrook-github-io-idcrook-github-io
+
+# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
+google_analytics: UA-60990004-1
+
+# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
+# Used for Sitemap.xml and your RSS feed
+##url: https://idcrook.github.io
+# change to match the CNAME so that the sitemap is "accepted"
+url: https://github.crookster.org
+
+# If you're hosting your site at a Project repository on GitHub pages
+# (http://yourusername.github.io/repository-name)
+# and NOT your User repository (http://yourusername.github.io)
+# then add in the baseurl here, like this: "/repository-name"
+baseurl: ""
+
+permalink: /:title/
+
+# https://jekyllrb.com/docs/pagination/
+paginate: 5
+paginate_path: "/page-:num/"
+
+# # Set the Sass partials directory, as we're using @imports
+sass:
+  sass_dir: _sass
+  style: :compressed
+#  style: :expand # You might prefer ":compressed
+#  style: :compressed # You might prefer ":expand"
+
+theme: jekyll-theme-primer
+
+# Use the following plug-ins
+# https://help.github.com/articles/configuring-jekyll-plugins/
 plugins:
-  - jekyll-feed
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - jemoji # allow :smile:
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-mentions
+  - jekyll-avatar
+  - jekyll-gist
+  - jekyll-github-metadata
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# Exclude these files from your production _site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - README.upstream.md
+  - CNAME
+  - UsingDockerToServe.md
+  - scripts

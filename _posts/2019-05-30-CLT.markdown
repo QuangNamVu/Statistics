@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "Central limit theorem"
+date:   2019-05-30 5:35:51 +0700
+categories: jekyll update
+---
+
+
+# Proof for Uniform distribution:
+## Assumption:
+
+$$\{X_1, X_2,\dots X_n\}$ are identical independent distribution random variables with uniform distribution: $\mu = E(X) = \frac{a + b}{2}$ and variance: $\sigma^2 =E(X^2) =\frac{(b-a)^2}{12}$$.
+## Consider the random variable:
+
+$Z_n = \frac{X_1 + X_2 + \dots + X_n -n\mu}{\sqrt{n\sigma^2}}= \sum_{i=1}^{n}\frac{X_i -\mu}{\sqrt{n\sigma^2}}= \sum_{i=1}^{n}\bar{X_i}$
+
+Check out the [Github notebook][CLT-code] for more info on how to get the histogram implement by python.
+
+[CLT-code]: https://github.com/QuangNamVu/QuangNamVu.github.io/blob/master/Statistic_notebook/CLT%20Uniform%20sample%20mean.ipynb
+

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<!-- Begin meta.html -->
+<meta charset="utf-8" />
+<meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+<meta name="author" content="" />
+<!-- for jekyll-feed plugin -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Fundamental Statistic" />
+<link rel="apple-touch-icon" href="/images/idcrook-apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title=" - Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." href="/feed.xml" />
+<meta property="twitter:title" content="Central limit theorem" />
+<!-- End   meta.html -->
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Central limit theorem | Fundamental Statistic</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Central limit theorem" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Proof for Uniform distribution: Assumption:" />
+<meta property="og:description" content="Proof for Uniform distribution: Assumption:" />
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2019/05/30/CLT.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2019/05/30/CLT.html" />
+<meta property="og:site_name" content="Fundamental Statistic" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-05-30T05:35:51+07:00" />
+<script type="application/ld+json">
+{"description":"Proof for Uniform distribution: Assumption:","@type":"BlogPosting","url":"http://localhost:4000/jekyll/update/2019/05/30/CLT.html","headline":"Central limit theorem","dateModified":"2019-05-30T05:35:51+07:00","datePublished":"2019-05-30T05:35:51+07:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2019/05/30/CLT.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<link rel="stylesheet" href="/assets/css/style.css?v=">
+</head>
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="" /></a>
+          <div class="site-info">
+            <h1 class="site-name"><a href="/"></a></h1>
+            <p class="site-description">Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</p>
+          </div>
+          <nav>
+            <a href="/">Blog</a>
+            <a href="/projects">Projects</a>
+            <a href="/about">About</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+    <div id="main" role="main" class="container-lg px-3 my-5 markdown-body">
+      
+
+
+<article class="post">
+  <h1>Central limit theorem</h1>
+
+  <div class="entry">
+    <h1 id="proof-for-uniform-distribution">Proof for Uniform distribution:</h1>
+<h2 id="assumption">Assumption:</h2>
+
+<p><script type="math/tex">\{X_1, X_2,\dots X_n\}$ are identical independent distribution random variables with uniform distribution: $\mu = E(X) = \frac{a + b}{2}$ and variance: $\sigma^2 =E(X^2) =\frac{(b-a)^2}{12}</script>.</p>
+<h2 id="consider-the-random-variable">Consider the random variable:</h2>
+
+<p>$Z_n = \frac{X_1 + X_2 + \dots + X_n -n\mu}{\sqrt{n\sigma^2}}= \sum_{i=1}^{n}\frac{X_i -\mu}{\sqrt{n\sigma^2}}= \sum_{i=1}^{n}\bar{X_i}$</p>
+
+<p>Check out the <a href="https://github.com/QuangNamVu/QuangNamVu.github.io/blob/master/Statistic_notebook/CLT%20Uniform%20sample%20mean.ipynb">Github notebook</a> for more info on how to get the histogram implement by python.</p>
+
+
+  </div>
+
+  <div class="date">
+    Published on May 30, 2019
+  </div>
+
+  
+
+</article>
+
+    </div>
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </footer>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>
+     anchors.options.visible = 'touch';
+     anchors.options.placement = 'right';
+     anchors.add();</script>
+    
+
+  </body>
+</html>
