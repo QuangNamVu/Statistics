@@ -100,7 +100,8 @@ sass:
 #  style: :expand # You might prefer ":compressed
 #  style: :compressed # You might prefer ":expand"
 
-theme: jekyll-theme-primer
+theme: minima
+# theme: jekyll-theme-primer
 
 # Use the following plug-ins
 # https://help.github.com/articles/configuring-jekyll-plugins/
