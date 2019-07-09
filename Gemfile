@@ -19,7 +19,7 @@ gem 'jekyll-mentions'
 gem 'jekyll-avatar'
 gem 'jekyll-gist'
 gem 'jekyll-github-metadata'
-# gem "jekyll-theme-primer"
+gem 'maruku'
 
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
