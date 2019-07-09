@@ -31,12 +31,12 @@ defaults:
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-  dribbble:
+  # dribbble:
   email: namvq@vng.com.vn
-  facebook: # idcrook
-  flickr:
+  # facebook: # idcrook
+  # flickr:
   github: Quangnamvu
-  homepage: https://www.crookster.org
+  # homepage: https://www.crookster.org
   instagram: vuquang.nam
   # linkedin: # 
   # pinterest:
@@ -47,16 +47,16 @@ footer-links:
   # googleplus: # anything in your profile username that comes after plus.google.com/
 
 # used by jekyll-seo-tag plugin
-twitter:
-  username: 
-  card: summary
+# twitter:
+#   username: 
+#   card: summary
 
 # search site console
-google_site_verification: 
+# google_site_verification: 
 
 social:
   name: Nam VQ
-  links:
+  # links:
     # - https://twitter.com/idcrook
     # - https://github.com/idcrook
     # - https://www.instagram.com/dpc
